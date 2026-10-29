@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
 
 // ==========================================
@@ -268,6 +269,8 @@ export default function App() {
         onRemove={handleRemoveFromCart}
         onClearCart={() => setCart([])}
       />
+
+      <SpeedInsights />
     </div>
   );
 }
